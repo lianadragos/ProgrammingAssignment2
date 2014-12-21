@@ -1,6 +1,13 @@
+## Call first the makeCacheMatrix function with a valid reversible matrix.
+## Store the result in a variable that should be subsequently passed to cacheSolve function
+## Example : 
+## > LL <- makeCacheMatrix(matrix(4:7,2,2))
+## > cacheSolve(LL)
+## Calling a second time cacheSolve with the same argument will display the "getting cache data" message
+
+
 ## Creates an object holding a matrix (input argument), its inverse 
 ## and the four methods get, set, getInverse, setInverse 
-
 makeCacheMatrix <- function(x = matrix()) {
   inverse <- NULL
   set <- function(Y) {
@@ -18,7 +25,6 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Takes a makeCacheMatrix object as an argument, return the stored inverse if present 
 ## otherwise calculates the inverse, stores it and then returns it. 
-
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   inverse <- x$getmatrix()
