@@ -1,6 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 ## Creates an object holding a matrix (input argument), its inverse 
 ## and the four methods get, set, getInverse, setInverse 
 
